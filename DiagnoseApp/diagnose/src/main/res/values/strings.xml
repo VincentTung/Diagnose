@@ -1,0 +1,31 @@
+﻿<resources>
+    <string name="app_name">lib_Diagnose</string>
+    <string name="title_activity_diagnose">DiagnoseActivity</string>
+    <string name="diagnose_net_state">网络情况</string>
+    <string name="diagnose_net_and_data">网络和数据诊断</string>
+    <string name="diagnose">诊断</string>
+    <string name="diagnose_net_type">网络类型</string>
+    <string name="diagnose_net_proxy">网络代理</string>
+    <string name="diagnose_ip">本机IP</string>
+    <string name="diagnose_phone_system">手机系统诊断</string>
+    <string name="diagnose_phone_model">手机型号</string>
+    <string name="diagnose_os_version">系统版本</string>
+    <string name="diagnose_system_process">系统进程</string>
+    <string name="diagnose_root">是否root</string>
+    <string name="diagnose_user_type">用户类型</string>
+    <string name="diagnose_app_version">客户端版本</string>
+    <string name="diagnose_map_location">地图和定位诊断</string>
+    <string name="diagnose_phone_map">本机地图</string>
+    <string name="diagnose_gps">gps</string>
+    <string name="diagnose_hardware">硬件状况诊断</string>
+    <string name="diagnose_manufactor">手机厂商</string>
+    <string name="diagnose_sdcard">存储卡</string>
+    <string name="diagnose_internal_storage">内部存储</string>
+    <string name="diagnose_battery">电池电量</string>
+   <string name="diagnose_cpu_frequency">CPU主频</string>
+    <string name="diagnose_memory_size">内存大小</string>
+    <string name="diagnose_screen">屏幕分辨率</string>
+    <string name="diagnose_location_permission">定位权限</string>
+    <string name="valid_network">有可用网络</string>
+    <string name="invalid_network">无可用网络</string>
+</resources>

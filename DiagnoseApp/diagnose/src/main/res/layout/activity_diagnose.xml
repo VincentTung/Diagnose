@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/diagnose_item_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/diagnose"
+            android:textColor="@color/diagnose_black"
+            android:textSize="@dimen/diagnose_title_tx_size" />
+
+        <ImageView
+            android:id="@+id/iv_diagnose_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/diagnose_refresh" />
+
+        <ImageView
+            android:id="@+id/iv_diagnose_shot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_diagnose_refresh"
+            android:src="@drawable/diagnose_shot" />
+
+        <ImageView
+            android:id="@+id/iv_diagnose_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/diagnose_back" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/diagnose_white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    style="@style/diagnose_section_title"
+                    android:text="@string/diagnose_net_and_data" />
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_net_state" />
+
+                    <TextView
+                        android:id="@+id/tv_net_state"
+                        style="@style/diagnose_section_item_value"
+                        android:text="有可用网络" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_net_type" />
+
+                    <TextView
+                        android:id="@+id/tv_net_type"
+                        style="@style/diagnose_section_item_value"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_net_proxy" />
+
+                    <TextView
+                        android:id="@+id/tv_net_proxy"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_ip" />
+
+                    <TextView
+                        android:id="@+id/tv_ip"
+                        android:lines="2"
+                        style="@style/diagnose_section_item_value"
+                        android:text="192.168.11.11 山东省青岛市192.168.11.11 山东省青岛市192.168.11.11 山东省青岛市192.168.11.11 山东省青岛市 " />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+
+                <TextView
+                    style="@style/diagnose_section_title"
+                    android:text="@string/diagnose_phone_system" />
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_phone_model" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_model"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_os_version" />
+
+                    <TextView
+                        android:id="@+id/tv_os_version"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_system_process" />
+
+                    <TextView
+                        android:id="@+id/tv_system_process"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_root" />
+
+                    <TextView
+                        android:id="@+id/tv_root"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_user_type" />
+
+                    <TextView
+                        android:id="@+id/tv_user_type"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_app_version" />
+
+                    <TextView
+                        android:id="@+id/tv_app_version"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <TextView
+                    style="@style/diagnose_section_title"
+                    android:text="@string/diagnose_map_location" />
+
+                <include layout="@layout/diagnose_include_divider" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_gps" />
+
+                    <TextView
+                        android:id="@+id/tv_gps"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_location_permission" />
+
+                    <TextView
+                        android:id="@+id/tv_location_permission"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <TextView
+                    style="@style/diagnose_section_title"
+                    android:text="@string/diagnose_hardware" />
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_manufactor" />
+
+                    <TextView
+                        android:id="@+id/tv_manufactor"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_sdcard" />
+
+                    <TextView
+                        android:id="@+id/tv_sdcard"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_internal_storage" />
+
+                    <TextView
+                        android:id="@+id/tv_internal_storage"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_battery" />
+
+                    <TextView
+                        android:id="@+id/tv_battery"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_cpu_frequency" />
+
+                    <TextView
+                        android:id="@+id/tv_cpu_frequency"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_memory_size" />
+
+                    <TextView
+                        android:id="@+id/tv_memory_size"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/diagnose_section_item_pre"
+                        android:text="@string/diagnose_screen" />
+
+                    <TextView
+                        android:id="@+id/tv_screen"
+                        style="@style/diagnose_section_item_value"
+                        android:text="test data" />
+                </LinearLayout>
+
+                <include layout="@layout/diagnose_include_divider" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </FrameLayout>
+</LinearLayout>

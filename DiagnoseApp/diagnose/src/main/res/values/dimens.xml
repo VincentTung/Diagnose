@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="diagnose_section_title">14sp</dimen>
+    <dimen name="diagnose_section_item_pre">16sp</dimen>
+    <dimen name="diagnose_section_item_value">16sp</dimen>
+    <dimen name="diagnose_section_item_pre_width">120dp</dimen>
+    <dimen name="diagnose_item_height">45dp</dimen>
+    <dimen name="diagnose_title_tx_size">18sp</dimen>
+</resources>

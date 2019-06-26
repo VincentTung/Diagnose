@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="diagnose_section_title">#000000</color>
+
+    <color name="diagnose_section_item_pre">#999999</color>
+    <color name="diagnose_section_item_value">#333333</color>
+    <color name="diagnose_divider_color">#F6F6F6</color>
+    <color name="diagnose_black">#000000</color>
+    <color name="diagnose_white">#FFFFFFFF</color>
+</resources>
